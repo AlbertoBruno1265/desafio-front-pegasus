@@ -1,0 +1,233 @@
+<!-- Estrutura básica para criação de uma página HTML5 -->
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Definição do título da página -->
+    <title>Rastreio Express</title>
+
+    <!-- Definição do ícone da página -->
+    <link rel="shourtcut icon" href="./Images/favicon.png" type="image/x_icon">
+    
+    <!-- Link com o arquivo "style.css" -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <!-- Definição do cabeçalho que será fixo durante toda a página -->
+    <header class="cabecalho">
+
+        <!-- Criação de uma div que irá conter a logo-marca do site -->
+        <div class="logomarca">
+
+            <!-- Criação de outras duas divs para poder colocar o texto e a imagem na mesma linha -->
+            <div class="logo_img">
+                <img src="./Images/Logo.png" alt="Logo a Rastreio Express">
+            </div>
+
+            <div class="logo_txt">
+                <h1>Rastreio Express</h1>
+            </div>
+        </div>
+
+
+        <!-- Criação de uma div que contêm os links para as âncoras do site -->
+        <div class="navegacao">
+            <nav>
+                <!-- Cria uma lista não ordenada com os links de navegação -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#ajuda">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Criação da div que contêm os links para fazer login e cadastramento -->
+        <div class="login">
+            <a class="entrar" href="#">Entrar</a>
+            <a class="cadastrar" href="#">Cadastrar</a>
+        </div>
+        
+    </header>
+
+    <!-- Criação da div pra página "Home" -->
+    <div id="home" class="pagina home">
+        
+        <!-- Título principal da página "Home" -->
+        <h1>Rastreie seu Pedido!</h1>
+        
+        <!-- Criação do formulário de pesquisa do código de rastreiamento -->
+        <form action="#">
+            
+            <!-- Caixa de texto que irá receber o código de rastreiamento -->
+            <input type="text" name="codigo_rastreio" id="codigo_rastreio" placeholder="Código de Rastreamento">
+            
+            <!-- Botão que executa a ação de rastreiamento -->
+            <button type="submit">RASTREAR</button>
+        </form>
+        
+        <!-- Colocação da imagem de boxes -->
+        <img src="./Images/boxes.svg" alt="Imagem de caixas">
+        
+    </div>
+    
+    <!-- Criação da div pra página "Sobre" -->
+    <div id="sobre" class="pagina sobre">
+        
+        <!-- Título princial com um parágrafo-->
+        <h1>Veja como o Rastreio Express pode facilitar sua rotina</h1>
+        <p class="paragrafo_principal">As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina de logística.</p>
+        
+        <!-- Criação de uma div para poder organizar o conteúdo em grades -->
+        <div class="grid_sobre">
+            
+            <!-- Criação de novas divs para a inserção do conteúdo de cada elemento da grade -->
+            <div>
+                <img src="./Images/search.svg" alt="Uma caixa sob o olhar de uma lupa">
+                <h3>Busque por uma encomenda</h3>
+                <p>Use o Rastreio Express para encontrar suas encomendas. Basta colar o código de rastreio no campo de buscas e aproveitar.</p>
+            </div>
+            
+            <div>
+                <img src="./Images/phone_loc.svg" alt="Um celular com um ícone de localização">
+                <h3>Acompanhe suas encomendas</h3>
+                <p>O Rastreio Express é desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender.</p>
+            </div>
+            
+            <div>
+                <img src="./Images/notification_bell.svg" alt="Sino de notificações">
+                <h3>Receba notificações</h3>
+                <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail.</p>
+            </div>
+        </div>
+        
+        <!-- Subtítulo da página "Sobre" -->
+        <h2>O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação.</h2>
+        
+        <!-- Link que redireciona para a tela de cadastramento -->
+        <a class="cadastre_se" href="#">Cadastre-se agora</a>
+        
+    </div>
+    
+    
+    <!-- Criação da div pra página "Parceiros" -->
+    <div id="parceiros" class="pagina pareiros">
+        
+        <!-- Criação de uma div para colocar o fundo verde -->
+        <div class="fundo_verde">
+            
+            <!-- Div para agrupar textos e os logos do parceiros -->
+            <div class="texto_parceiros">
+                
+                <!-- Título principal da página e alguns parágrafos de explicação -->
+                <h1>A plataforma de rastreamento mais completa do mercado</h1>
+                <p>O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correiros</p>
+                <p>Porém, quem faz os envios com etiquetas geradas na plataforma Melhor Envio, também consegue rastrear encomendas envidas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+                
+                <!-- Div para agrupar todos os logotipos das empresas parceiras -->
+                <div class="logos_parceiros">
+                    <img src="./Images/J&T_logo.png" alt="Logo da J&T Express">
+                    <img src="./Images/azul-cargo-express_logo.png" alt="Logo da Azul Cargo Express">
+                    <img src="./Images/buslog_logo.png" alt="Logo da Buslog">
+                    <img src="./Images/correios_logo.png" alt="Logo dos correios">
+                </div>
+            </div>
+            
+            <!-- Div para manipular a imagem do site -->
+            <div class="imag_parceiros">
+                <img class="img_mulher" src="./Images/image_green_background.png" alt="Mulher atrás de uma caixa">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Criação da div pra página "Ajuda" -->
+    <div id="ajuda" class="pagina parceiros">
+        
+        <!-- Div para agrupar a parte superior do site -->
+        <div class="titulo_ajuda">
+
+            <!-- Criação de outras divs para poder colcoar a imagem e os textos em uma mesma linha -->
+            <div class="img_ajuda">
+                <img src="./Images/need_help.png" alt="Moça sentada ao lado de um laptop com pontos de interrogação na tela">
+            </div>
+            
+            <div class="texto_ajuda">
+                <h1>Precisa de ajuda com algum rastreio?</h1>
+                <p>Veja o que fazer em cada um dos casos:</p>
+            </div>
+
+        </div>
+
+
+        <!-- Criação de uma div para poder organizar os botões e os conteúdos em forma de div -->
+        <div class="grid_ajuda">
+
+            <!-- Criação do botão que move para a esquerda -->
+            <button>
+                <img src="./Images/seta-para-a-esquerda.png" alt="Ícone de seta para a esquerda">
+            </button>
+            
+            <!-- Criação das divs com seus respectivos ícones e textos -->
+            <div>
+                <img src="Images/ampulheta.png" alt="Ícone de uma ampulheta">
+                <h2>Estou esperando uma encomenda</h2>
+                
+                <p>O remetende é a única pessoa que pode resolver problemas de rastreio.</p>
+                
+                <p>
+                    Sugerimos que peça a pessoa responsável pelo envio entrar em contato com a gente, seguindo as instruções para lojistas.
+                </p>
+            </div>
+            
+            <div>
+                <img src="Images/caixa.png" alt="Ícone de uma caixa de envio">
+                
+                <h2>Enviei um pacote com etiqueta do Melhor Envio</h2>
+                
+                <p>É muito fácil encontrar ajuda. <br>Veja só:</p>
+                
+                <ul>
+                    <li><p>Entre na sua conta Melhor Envio</p></li>
+                    
+                    <li><p>Vá até a opção "Ajuda"</p></li>
+                    
+                    <li><p>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa.</p></li>
+                </ul>
+            </div>
+            
+            <div>
+                <img src="./Images/etiqueta.png" alt="Ícone de uma etiqueta">
+                
+                <h2>Comprei uma etiqueta diretamente com a transportadora</h2>
+                
+                <p>Sugerimos que entre em contato com a empresa responsável pelo envio.</p>
+                
+            </div>
+            
+            <div>
+                <img src="./Images/dinheiro.png" alt="Ícone com notas de dinheiro">
+                
+                <h2>Eu vou pagar alguma taxa de uso ou mensalidade?</h2>
+                
+                <p>Não! O Melhor Ratreio é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços.</p>
+            </div>
+            
+            <!-- Criação do botão que move para a direita -->
+            <button>
+                <img src="./Images/seta-para-a-direita.png" alt="Ícone de seta para a direita">
+            </button>
+        </div>
+    </div>
+    
+</body>
+
+</html>

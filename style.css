@@ -1,0 +1,548 @@
+/* Seletor de todos os elementos da página */
+* {
+    /* Seta a margin e o padding para 0 para que as medidas padrão do navegador não interfiram no processo*/
+    margin: 0;
+    padding: 0;
+
+    /* Seta o box-sizing para que ele também considere os borders e os paddings dos elementos */
+    box-sizing: border-box;
+}
+
+/* Seleciona tods os elementos presentes na tag "html" */
+html {
+    /* Modifica o comportamento do scrool para role mais suavemente pela página */
+    scroll-behavior: smooth;
+
+    /* Muda todas as cores do documento para Helvetica */
+    font-family: Helvetica;
+}
+
+/* Classe do header que ficará fixo no topo do site */
+.cabecalho {
+    
+    /* Modifica o display para flex, a fim de que seja possível colocar vários elementos em uma mesma linha */
+    display: flex;
+    
+    /* Fixa a posição do header no topo do site */
+    position: fixed;
+    
+    /* Seta a largura do header para o tamanho total da tela e a altura para 40 pixels */
+    width: 100%;
+    height: 40px;
+    
+    /* Centraliza os elementos verticalmente */
+    align-items: center;
+    
+    /* Cria um espaçamento igual entre os elementos que estão dentro do header */
+    justify-content: space-between;
+    
+    /* Muda a cor de fundo do header para branco */
+    background-color: rgb(255, 255, 255);
+    
+    /* Define que seja criada uma borda contínua na parte de baixo do header */
+    border-bottom-style: solid;
+    
+    /* Define a cor da borda para cinza e aplica uma transparência */
+    border-bottom-color: rgba(128, 128, 128, 0.075);
+    
+    /* Define em 20 pixels preenchimento para para o topo e para baixo do header */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    /* Define o tamanho das fontes para 20 pixels */
+    font-size: 20px;
+    
+}
+
+/* Classe da div que está dentro do header e contêm nome e logo do site */
+.logomarca {
+    
+    /* Define uma margem de 100 pixels a esquerda da tela */
+    margin-left: 100px;
+    
+    
+    /* Modifica o display para flex, a fim de que seja possível colocar o logo e o nome do site em uma mesma linha */
+    display: flex;
+    
+    
+    /* Centraliza os elementos verticalmente */
+    align-items: center;
+}
+
+/* Seleciona a imagem dentro da classer "logo_img" */
+.logo_img img {
+    
+    /* Redimenciona a imagem para 40 pixels */
+    width: 40px;
+}
+
+/* Classe do nome do site */
+.logo_txt {
+    
+    /* Modifica a cor e o tamnho do nome do site */
+    color: #004AAD;
+    font-size: 15px;
+}
+
+/* Seleciona os links dentro de header e da div navegacao */
+.cabecalho .navegacao a {
+    
+    /* Define uma margem de 75 pixels para todas as direções */
+    margin: 75px;
+    
+    /* Remove as decorações padrão dos links */
+    text-decoration: none;
+    
+    /* Coloca os links em negrito */
+    font-weight: bold;
+}
+
+/* Seleciona os links de navegação quando o mouse é passado por cima */
+.cabecalho .navegacao a:hover {
+    
+    /* Modifica a cor dos links */
+    color: #1A9047;
+}
+
+
+/* Seleciona a lista não ordenada do header */
+.cabecalho nav ul{
+    
+    /* Modifica o display para flex, a fim de que seja possível colocar todos os links em uma mesma linha */
+    display: flex;
+    
+    /* Remove os pontinhos que ficam atrás dos links */
+    list-style: none;
+}
+
+/* Classe da div que está dentro do header e contêm os links de login e cadastramento */
+.login {
+    
+    /* Modifica o display para flex, a fim de que seja possível colocar todos os links em uma mesma linha */
+    display: flex;
+    
+    /* Centraliza os elementos verticalmente */
+    align-items: center;
+    
+    
+    /* Cria um espaçamento igual entre os elementos que estão dentro da div */
+    justify-content: space-between;
+    
+    
+    /* Define uma margem de 100 pixels para todas as direções */
+    margin-right: 100px;
+    
+    /* Define o tamanho da div para 210 pixels */
+    width: 210px;
+}
+
+/* Seleciona todos links da div "login" */
+.login a {
+    
+    /* Centraliza o texto dos links*/
+    text-align: center;
+    
+    /* Define a largura e a altura dos links */
+    width: 100px;
+    height: 30px;
+    
+    /* Determina o raio das bordas dos links */
+    border-radius: 10px;
+    
+    /* Modifica a cor da borda do link */
+    border-color: #1A9047;
+    
+    /* Modifica o estilo da borda */
+    border-style: solid;
+    
+    /* Remove as decorações padrão dos links */
+    text-decoration: none;
+    
+}
+
+
+/* Seleciona o link de login */
+.cabecalho .entrar{
+
+    /* Modifica a cor do link */
+    color: #1A9047;
+    
+    /* Modifica a cor de fundo do link */
+    background-color: white;
+}
+
+/* Seleciona o link de cadastramento */
+.cabecalho .cadastrar {
+    
+    /* Modifica a cor do link */
+    color: white;
+    
+    /* Modifica a cor de fundo do link */
+    background-color: #1A9047;
+    
+}
+
+/* Seleciona o link de login quando o mouse é passado por cima */
+.cabecalho .login .entrar:hover {
+    
+    /* Modifica a cor do link */
+    color: white;
+    
+    /* Modifica a cor de fundo do link */
+    background-color: #1A9047;
+}
+
+/* Seleciona o link de cadastramento quando o mouse é passado por cima */
+.cabecalho .login .cadastrar:hover {
+    
+    /* Modifica a cor do link */
+    color: #1A9047;
+    
+    /* Modifica a cor de fundo do link */
+    background-color: white;
+}
+
+/* Classe que determina os atributos que todas as páginas devem ter */
+.pagina {
+
+    /* Determina que todas a página tenho um preenchimento no top de 70 pixels */
+    padding-top: 70px;
+
+    /* Define o comprimento e a altura de todas as paginas para o mesmo tamanho da tela*/
+    width: 100vw;
+    height: 100vh;
+
+    /* Alinha o texto para o centro das páginas */
+    text-align: center;
+
+    /* Modifica a cor de fundo de todas as páginas */
+    background-color: rgb(255, 255, 255);
+}
+
+/* Seleciona todos o elementos "h1" da página "home" */
+.home h1 {
+
+    /* Modifica a cor do texto */
+    color: #2BC866;
+
+    /* Modifica o tamanho do texto para 45 pixels */
+    font-size: 45px;
+}
+
+/* Seleciona o formulário presente na página "home" */
+.home form{
+
+    /* Define as margens do topo e a de baixo para 40 pixels, enquanto as da esquerda e da direita para 0 */
+    margin: 40px 0;
+}
+
+/* Seleciona a caixa de texto do formulário */
+.home form input {
+
+    /* Modifica o comprimento e a altura da caixa de texto */
+    width: 500px;
+    height: 25px;
+    
+    /* Modifica o raio da borda da caixa de texto */
+    border-radius: 4px;
+}
+
+/* Seleciona o botão do formulário */
+.home form button {
+    
+    /* Modifica a cor do texto do botão */
+    color: white;
+    
+    /* Coloca o texto do botão em negrito */
+    font-weight: bold;
+    
+    /* Modifica a cor de fundo do botão */
+    background-color: gray;
+    
+    /* Modifica o comprimento e a altura da caixa de texto do botão */
+    width: 125px;
+    height: 25px;
+    
+    /* Modifica o raio da borda do botão */
+    border-radius: 4px;
+}
+
+/* Seleciona o botão quando o mouse é passado por cima */
+.home form button:hover{
+
+    /* Modifica a cor do texto do botão */
+    color: #2BC866;
+}
+
+/* Seleciona a imagem da página "home" */
+.home img {
+
+    /* Cria uma margem no topo da imagem */
+    margin-top: 100px;
+}
+
+/* Seleciona todos os elementos "h1" e "h2" da página "sobre" */
+.sobre h1, h2 {
+    
+    /* Modifica a cor dos textos */
+    color: #2BC866;
+}
+
+/* Seleciona todos os elementos "h1" da página "sobre" */
+.sobre h1 {
+    
+    /* Modifica o tamanho do texto de "h1" */
+    font-size: 50px;
+
+    /* Cria uma margin na parte de baixo do texto de "h1" */
+    margin-bottom: 50px;
+}
+
+/* Seleciona todos os elementos "h2" da página "sobre" */
+.sobre h2 {
+
+    /* Define o comprimento máximo que "h2" pode atingir */
+    max-width: 1000px;
+
+    /* Modific ao tamnho do texto */
+    font-size: 30px;
+
+    /* Cria uma margem de 100 pixels para o topo e para baixo, e de 0 para esquerda e para a direita */
+    margin: 100px auto;
+}
+
+/* Seleciona o link "cadastre-se" da página "sobre" */
+.cadastre_se{
+    
+    /* Muda o display para que o link se comporte como um bloco */
+    display: block;
+    
+    /* Difine o comprimento e a altura desse link */
+    width: 250px;
+    height: 30px;
+    
+    /* Centraliza na página "sobre" atrávez das margens esquerda e direta */
+    margin: 0 auto;
+    
+    /* Define o estilo da borda do link */
+    border-style: solid;
+    
+    /* Define a cor da borda */
+    border-color: #2BC866;
+    
+    /* Define o raio dos cantos da borda */
+    border-radius: 5px;
+    
+    /* Alinha o texto ao centro do link */
+    text-align: center;
+    
+    /* Tira as decorações padrões do link */
+    text-decoration: none;
+    
+    /* Coloca texto do link em negrito */
+    font-weight: bold;
+    
+    /* Muda cor do texto do link */
+    color: white;
+    
+    /* Muda cor de fundo do link */
+    background-color: #2BC866;
+    
+}
+
+/* Seleciona o link "cadastre-se" da página "sobre" quando o mouse passa por cima*/
+.cadastre_se:hover{
+    
+    
+    /* Muda cor do texto do link */
+    color: #2BC866;
+    
+    /* Muda cor de fundo do link */
+    background-color: white;
+}
+
+/* Seleiona o parágrafo que fica logo abaixo do título principal da página sobre */
+.paragrafo_principal { 
+
+    /* Modifica o tamnho da fonte */
+    font-size: 20px;
+
+    /* Cria uma margem na parte de baixo do parágrafo */
+    margin-bottom: 50px;
+}
+
+/* Seleciona a classe "grid_sobre" */
+.grid_sobre {
+
+    /* Mude o display para "grid" */
+    display: grid;
+
+    /* Define o templete de grid para 3 colunas */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* Define margens a esqueda e a direita da grade */
+    margin-left: 100px;
+    margin-right: 100px;
+
+    /* Alinha os textos ao centro de suas respetivas divs*/
+    text-align: center;
+
+    
+}
+
+/* Seleciona todos os "h3" do gride da página "sobre" */
+.grid_sobre h3 {
+
+    /* Modifica a cor de todos os "h3" */
+    color: #2BC866;
+}
+
+/* Seleciona todos os "p" do gride da página "sobre" */
+.grid_sobre p {
+
+    /* Define um tamnho máximo para todos os "p" */
+    max-width: 300px;
+
+    /* Centraliza todos os parágrafos na grade */
+    margin: 0 auto;
+}
+
+/* Seleciona a div que servirá de fondo para a página "parceiros" */
+.fundo_verde {
+
+    /* Define uma margem no topo da div */
+    margin-top: 200px;
+
+    /* Modific ao display para flex, a fim de poder alinhas as demais divs em uma mesma linha */
+    display: flex;
+
+    /* Modifica a cor de fundo da div */
+    background-color: #2BC866;
+}
+
+/* Seleciona a div que formata os textos da prágina "parceiros" */
+.texto_parceiros {
+    /* Cria uma margem no topo e para baixo*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    /* DEfine uma margem à esquerda da tela */
+    margin-left: 500px;
+
+    /* Delimita comprimento máximo que a div pode atingir */
+    max-width: 500px;
+
+    /* Modifica a cor do texto da div */
+    color: white;
+
+    /* Alinha o texto à esquerda da div */
+    text-align: left;
+}
+
+/* Selheciona a div que contêm todas as logos */
+.logos_parceiros {
+    
+    /* Modifica o display para flex, a fim de todas as logos ficarem em uma mesma linha*/
+    display: flex;
+
+    /* Cria um espaçamento igual entre as logos */
+    justify-content: space-between;
+
+    /* Define o comprimento da div */
+    width: 500px;
+
+    /* Cria uma margem no topo e em baixo das logos */
+    margin: 25px 0;
+    
+    /* Define a cor de fundo da div */
+    background-color: white;
+
+    /* Define a cor da borda da div */
+    border-color: white;
+
+    /* Define o estilo da borda */
+    border-style: solid;
+
+    /* Define o raio dos cantos da borda */
+    border-radius: 14px;
+}
+
+/* Seleciona as logos dos parceiros */
+.logos_parceiros img{
+
+    /* Redimenciona as logos */
+    width: 80px;
+
+    /* Criar uma margem em todas as direções */
+    margin: 5px;
+}
+
+
+/* Seleciona o título principal da página "Ajuda" */
+.texto_ajuda h1 {
+
+    /* Modifica a cor do texto */
+    color: #2BC866;
+}
+
+/* Seleciona a classe "grid_ajuda"*/
+.grid_ajuda {
+
+    /* Mude o display para "grid" */
+    display: grid;
+
+    /* Define o templete de grid para 6 colunas. 2 para os botões e 4 para os conteúdos */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    /* Cria margens para o topo, para a esquerda e para a direita da tela */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    /* Alinha o texto à esquerda da grade */
+    text-align: left;
+
+}
+
+/* Seleciona as divs dentro do grid */
+.grid_ajuda div {
+
+    /* Cria margens para a esquerda e para a direita */
+    margin: 0 25px;
+    
+    /* Cria preenchimento interno em todas as direções */
+    padding: 25px;
+
+    /* Seleciona o estido da borda */
+    border-style: solid;
+
+    /* Modifica a cor da borda */
+    border-color: #2BC866;
+    /* Define o raio dos cantos da borda */
+    border-radius: 5px;
+}
+
+/* Seleciona os títulos secundários da página "ajuda" */
+.grid_ajuda div h2 {
+
+    /* Modifica o tamanho do texto */
+    font-size: 20px;
+}
+
+/* Seleciona todos os parágrafos que estão dentro da grade */
+.grid_ajuda div p {
+
+    /* Cria uma margem no topo dos parágrafos */
+    margin-top: 15px;
+
+    /* Modifica o tamanho do texto */
+    font-size: 15px;
+}
+
+/* Seleciona os botões que estão dentro da grade */
+.grid_ajuda button {
+
+    /* Torna transparente o fundo e a borda dos botões */
+    background-color: transparent;
+    border: transparent;
+}
